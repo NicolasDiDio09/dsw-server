@@ -12,6 +12,7 @@ import reserveRouter from './reserves.routes.js';
 import propertyTypeRouter from './propertieType.routes.js';
 import packageRouter from './package.routes.js';
 import locationsRouter from './locations.routes.js';
+import commentsRouter from './comments.routes.js';
 
 // Swagger
 import swaggerUi from 'swagger-ui-express';
@@ -55,6 +56,7 @@ const optionsSwagger = { customCssUrl: CSS_URL };
 router.use('/property-types', propertyTypeRouter);
 router.use('/medicalAssistances', medicalAssistanceRouter);
 router.use('/properties', PropertyRouter);
+router.use('/comments', commentsRouter);
 router.use('/cars', carsRouter);
 router.use('/users', usersRouter);
 router.use('/reserves', reserveRouter);
